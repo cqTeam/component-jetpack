@@ -1,0 +1,7 @@
+1. 开启 ViewBinding，在每个Module的build.gradle文件<android>节点下中添加如下代码
+    android {
+        ...
+        viewBinding {
+            enabled = true
+        }
+    }

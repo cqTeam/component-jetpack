@@ -1,0 +1,3 @@
+include ':component-jetpack'
+include ':app'
+rootProject.name = "JetpackDemo"
