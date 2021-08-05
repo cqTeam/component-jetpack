@@ -14,7 +14,7 @@ import kotlin.Exception
  * <p>
  * 描述：
  */
-abstract class BaseViewModel: ViewModel() {
+abstract class JpViewModel: ViewModel() {
 
     val errorLiveData by lazy { MutableLiveData<Exception>() }
 

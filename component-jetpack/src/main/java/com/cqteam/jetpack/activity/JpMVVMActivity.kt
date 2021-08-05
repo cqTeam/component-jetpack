@@ -2,7 +2,7 @@ package com.cqteam.jetpack.activity
 
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
-import com.cqteam.jetpack.viewmodel.BaseViewModel
+import com.cqteam.jetpack.viewmodel.JpViewModel
 
 /**
  * Author：      小小亮
@@ -10,7 +10,7 @@ import com.cqteam.jetpack.viewmodel.BaseViewModel
  * Email：       281332545@qq.com
  * Introduce：：
  **/
-abstract class JpMVVMActivity<VM: BaseViewModel>: JpActivity() {
+abstract class JpMVVMActivity<VM: JpViewModel>: JpActivity() {
     val mViewModel by lazy {
         ViewModelProvider(this).get(viewModelClass())
     }

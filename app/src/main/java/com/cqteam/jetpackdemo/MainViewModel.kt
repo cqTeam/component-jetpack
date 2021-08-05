@@ -1,10 +1,7 @@
 package com.cqteam.jetpackdemo
 
 import android.util.Log
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.cqteam.jetpack.viewmodel.BaseViewModel
-import kotlinx.coroutines.launch
+import com.cqteam.jetpack.viewmodel.JpViewModel
 
 /**
  * Author： 洪亮
@@ -13,7 +10,7 @@ import kotlinx.coroutines.launch
  * <p>
  * 描述：
  */
-class MainViewModel: BaseViewModel() {
+class MainViewModel: JpViewModel() {
 
     private val logTag = "MainViewModel"
 

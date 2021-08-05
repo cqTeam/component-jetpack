@@ -2,7 +2,7 @@ package com.cqteam.jetpack.fragment
 
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
-import com.cqteam.jetpack.viewmodel.BaseViewModel
+import com.cqteam.jetpack.viewmodel.JpViewModel
 
 /**
  * Author： 洪亮
@@ -11,7 +11,7 @@ import com.cqteam.jetpack.viewmodel.BaseViewModel
  * <p>
  * 描述：
  */
-abstract class JpMVVMFragment<VM: BaseViewModel>: JpFragment() {
+abstract class JpMVVMFragment<VM: JpViewModel>: JpFragment() {
     val mViewModel by lazy {
         ViewModelProvider(this).get(viewModelClass())
     }
