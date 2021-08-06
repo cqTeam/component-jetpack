@@ -3,6 +3,7 @@ package com.cqteam.jetpackdemo
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.cqteam.jetpack.activity.JpMVVMActivity
 import com.cqteam.jetpackdemo.databinding.ActivityMainBinding
 
@@ -32,6 +33,10 @@ class MainActivity : JpMVVMActivity<MainViewModel>() {
             it.setOnClickListener {
                 SecondActivity.start(this)
             }
+        }
+
+        mViewBinding.recyclerView.let {
+            it.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
         }
     }
 
