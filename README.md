@@ -17,3 +17,6 @@
 
 ### ViewModel
 - JpViewModel
+
+### LiveData
+- JpLiveData
