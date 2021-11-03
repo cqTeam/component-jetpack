@@ -19,7 +19,9 @@ abstract class JpViewModel: ViewModel() {
     val errorLiveData by lazy { MutableLiveData<Exception>() }
 
     /**
-     *  此方法支持处理被 suspend 标记了的函数，并且统一获取和处理异常
+     *  viewModelScope.launch {} ，在主线程上开启一个协程，此协程主要用于更新UI
+     *
+     *  block() 为 suspend 函数
      */
     fun launchUI (block: suspend CoroutineScope.() -> Unit) {
         viewModelScope.launch {
