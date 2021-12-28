@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
  * <p>
  * 描述：
  */
+@Deprecated("太过繁重，已经弃用")
 abstract class JpLiveData<T>: LiveData<T>() {
     /**
      *  业务级错误

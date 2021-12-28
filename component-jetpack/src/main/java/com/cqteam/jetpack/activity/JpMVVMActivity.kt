@@ -10,6 +10,7 @@ import com.cqteam.jetpack.viewmodel.JpViewModel
  * Email：       281332545@qq.com
  * Introduce：：
  **/
+@Deprecated("使用 CqMvvmActivity ")
 abstract class JpMVVMActivity<VM: JpViewModel>: JpActivity() {
     val mViewModel by lazy {
         ViewModelProvider(this).get(viewModelClass())

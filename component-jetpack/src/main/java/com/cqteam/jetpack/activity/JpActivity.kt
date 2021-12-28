@@ -13,6 +13,7 @@ import androidx.viewbinding.ViewBinding
  * <p>
  * 描述：
  */
+@Deprecated("使用 CqBaseActivity")
 abstract class JpActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
