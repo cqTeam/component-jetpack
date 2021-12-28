@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
 
 /**
  * Name：
@@ -22,7 +22,7 @@ import androidx.fragment.app.DialogFragment
  * Description：
  *
  **/
-abstract class CqBaseFragment: DialogFragment() {
+abstract class CqBaseFragment: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
